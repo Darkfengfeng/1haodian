@@ -1,0 +1,134 @@
+﻿@charset "utf-8";
+
+/*基础样式*/
+
+/*浮动 清除浮动*/
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{content:"";display:block;clear:both;}
+
+/*背景颜色*/
+.bg-1{background-color:#F4F4F4;}
+.bg-2{background-color:#FFE6EE;}
+.bg-3{background-color:#fff3e4;}
+.bg-4{background-color:#e9fbf0;}
+.bg-5{background-color:#F9EEE9;}
+.bg-6{background-color:#F0F8FF;}
+.bg-7{background-color:#e2f8f2;}
+.bg-8{background-color:#f06291;}/*全球1*/
+.bg-9{background-color:#ee9832;}/*全球2*/
+.bg-10{background-color:#54a472;}/*全球3*/
+.bg-11{background-color:#ad7d62;}/*全球4*/
+.bg-12{background-color:#468bcb;}/*全球5*/
+.bg-13{background:linear-gradient(to right,#0bcd96 0%,#05d7a8 100%);}/*生鲜左边部分菜单背景色*/
+.bg-14{background:linear-gradient(to right,#96374e 0%,#963759 100%);}/*生鲜右边部分菜单背景色*/
+.bg-15{background:linear-gradient(30deg,#ff8fb7 0%,#ff9cd6 32%,#ff86d0 100%);}/*美妆左边背景色*/
+.bg-16{background:linear-gradient(30deg,#f9ab57 0%,#fab775 32%,#f78a4b 100%);}/*国产部分左边背景色*/
+.bg-17{background:linear-gradient(to right,#fe8282 0%,#ff9292 100%)}/*左边母婴背景色*/
+.bg-18{background:linear-gradient(to right,#6ac5ff 0%,#71cfff 100%)}/*右边厨卫背景色*/
+.bg-19{background:linear-gradient(30deg,#b89587 0%,#af8c7e 32%,#a4725d 100%);}/*家居生活背景色*/
+.bg-20{background:linear-gradient(30deg,#93cbff 0%,#6ec7ff 32%,#7066ef 100%);}/*手机家电背景色*/
+.bg-21{background:linear-gradient(30deg,#c0b3f8 0%,#b9c2ff 32%,#978dfb 100%);}/*家具生活背景色*/
+
+/*行高*/
+.lineH-20{line-height:20px;}
+.lineH-22{line-height:22px;}
+.lineH-24{line-height:24px;}
+.lineH-26{line-height:26px;}
+.lineH-28{line-height:28px;}
+.lineH-30{line-height:30px;}
+/*颜色*/
+.cl-1{color:#FF4046;}/*1号店红色*/
+.cl-2{color:#e5e5e5;}/*浏览器边框浅灰*/
+.cl-3{color:#aaa;}/*浅灰*/
+.cl-4{color:#666;}/*浅灰稍深*/
+.cl-5{color:#000;}/*黑色*/
+.cl-6{color:#fff;}/*白色*/
+.cl-7{color:#fb6233;}/*橘红*/
+.cl-8{color:#f06291;}/*全球1*/
+.cl-9{color:#ee9832;}/*全球2*/
+.cl-10{color:#54a472;}/*全球3*/
+.cl-11{color:#ad7d62;}/*全球4*/
+.cl-12{color:#468bcb;}/*全球5*/
+.cl-13{color:#f78b4b;}/*国产中字体颜色*/
+.cl-14{color:#333;}/*list字体颜色*/
+.cl-15{color:#0bcd96;}/*生鲜部分左边字体颜色*/
+.cl-16{color:#96374e;}/*生鲜右边框字体颜色*/
+.cl-17{color:#ff87d0;}/*美妆字体颜色*/
+.cl-18{color:#fe8282;}/*母婴字体颜色*/
+.cl-19{color:#6ac5ff;}/*厨卫字体颜色*/
+.cl-20{color:#925740;}/*家居生活颜色*/
+.cl-21{color:#5c9bf1;}/*手机家电颜色*/
+.cl-22{color:#6d62da;}/*服饰鞋包颜色*/
+.cl-23{color:#333;}/*黑*/
+.cl-24{color:#999;}/*浅灰*/
+/*字号*/
+.ft-12{font-size:12px;}
+.ft-14{font-size:14px;}
+.ft-15{font-size:15px;}
+.ft-18{font-size:18px;}
+.ft-20{font-size:20px;}
+.ft-22{font-size:22px;}
+.ft-24{font-size:24px;}
+.ft-26{font-size:26px;}
+.ft-28{font-size:28px;}
+/*左内边距*/
+.pl-1{padding-left:1px;}
+.pl-2{padding-left:2px;}
+.pl-3{padding-left:3px;}
+.pl-4{padding-left:4px;}
+.pl-5{padding-left:5px;}
+.pl-8{padding-left:8px;}
+.pl-10{padding-left:10px;}
+.pl-15{padding-left:15px;}
+/*左外边距*/
+.ml-1{margin-left:1px;}
+.ml-2{margin-left:2px;}
+.ml-3{margin-left:3px;}
+.ml-4{margin-left:4px;}
+.ml-5{margin-left:5px;}
+.ml-8{margin-left:8px;}
+.ml-10{margin-left:10px;}
+.ml-12{margin-left:12px;}
+.ml-15{margin-left:15px;}
+.ml-20{margin-left:20px;}
+.ml-120{margin-left:120px;}
+
+/*右外边距*/
+.mr-10{margin-right:10px;}
+/*上外边距*/
+.mt-2{margin-top:2px;}
+.mt-4{margin-top:4px;}
+.mt-5{margin-top:5px;}
+.mt-8{margin-top:8px;}
+.mt-10{margin-top:10px;}
+.mt-40{margin-top:40px;}
+
+/*对齐方式*/
+.m-auto{margin:0 auto;}
+.t-r{text-align:right;}
+.v-a-m{vertical-align:middle;}
+/*边框线*/
+.br-1{border:1px solid red;}
+.br-2{border:1px solid black;}
+.br-3{border:1px solid yellow;}
+/*下边框线*/
+.br-bottom-gray{border-bottom:1px solid #e5e5e5;}
+.br-bottom-f60{border-bottom:2px solid #f60;}
+/*右边框线*/
+.br-right-gray{border-right:1px solid #e5e5e5;}
+
+/*显示隐藏*/
+.on{display:block;}
+.hidden{display:none;}
+.opa0{opacity:0;}
+.opa1{opacity:1;}
+
+
+
+
+
+
+
+
+
