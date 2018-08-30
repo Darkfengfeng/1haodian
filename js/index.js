@@ -1,5 +1,5 @@
 //主页面轮播图部分
-function firstBan() {
+(function () {
     var banners = document.querySelectorAll("div.banner-box > .banner > li"),
         banBtn = document.querySelectorAll("div.banner-box > .bottom-btn > li"),
         douBtn = document.querySelectorAll(".bd .banner-box > div.arrow"),
@@ -57,8 +57,7 @@ function firstBan() {
         banners[index].style.zIndex = "2";
         banBtn[index].classList.add("bon")
     }
-}
-firstBan();
+})();
 
 //一号生鲜部分轮播，进行封装，多部分调用
 var banner1= document.querySelectorAll(".bd .fre > div .con .banner1 li"),
