@@ -1,58 +1,64 @@
 //主页面轮播图部分
-var banners = document.querySelectorAll("div.banner-box > .banner > li"),
-    banBtn = document.querySelectorAll("div.banner-box > .bottom-btn > li"),
-    douBtn = document.querySelectorAll(".bd .banner-box > div.arrow"),
-    bannerBox = document.querySelector(".banner-box"),
-    length = banners.length,
-    index = 0;
+function firstBan() {
+    var banners = document.querySelectorAll("div.banner-box > .banner > li"),
+        banBtn = document.querySelectorAll("div.banner-box > .bottom-btn > li"),
+        douBtn = document.querySelectorAll(".bd .banner-box > div.arrow"),
+        bannerBox = document.querySelector(".banner-box"),
+        length = banners.length,
+        index = 0;
 // 点击下面按钮，图片变换
-for (var i=0;i<length;i++ ){
-    (function(i){
-        banBtn[i].onclick = function(){
-            if(index !== i) {
-                change(i)
+    for (var i = 0; i < length; i++) {
+        (function (i) {
+            banBtn[i].onclick = function () {
+                if (index !== i) {
+                    change(i)
+                }
             }
-        }
-    })(i);
+        })(i);
 
-}
-//自动轮播
-var timer = setInterval(function(){
-    change(index+1)},3000
-);
-//鼠标划入，自动轮播停止，鼠标划出，继续
-bannerBox.onmouseenter = function(){
-    clearInterval(timer);
-};
-bannerBox.onmouseleave = function(){
-    timer = setInterval(function(){
-        change(index+1)},3000
-    );
-};
-//左右按钮点击事件
-douBtn[0].onclick = function(){
-    var x = index - 1;
-    if(x<0){
-        change(length - 1 );
-    }else{
-        change(x);
     }
-};
-douBtn[1].onclick = function(){
+//自动轮播
+    var timer = setInterval(function () {
+            change(index + 1)
+        }, 3000
+    );
+//鼠标划入，自动轮播停止，鼠标划出，继续
+    bannerBox.onmouseenter = function () {
+        clearInterval(timer);
+    };
+    bannerBox.onmouseleave = function () {
+        timer = setInterval(function () {
+                change(index + 1)
+            }, 3000
+        );
+    };
+//左右按钮点击事件
+    douBtn[0].onclick = function () {
+        var x = index - 1;
+        if (x < 0) {
+            change(length - 1);
+        } else {
+            change(x);
+        }
+    };
+    douBtn[1].onclick = function () {
 
-    change(index + 1);
-};
+        change(index + 1);
+    };
+
 //对i进行封装。方便调用；
-function change( i ){
-    banners[index].style.zIndex = "1";
-    banBtn[index].classList.remove("bon");
+    function change(i) {
+        banners[index].style.zIndex = "1";
+        banBtn[index].classList.remove("bon");
 
-    index = i;
-    index%=length;
+        index = i;
+        index %= length;
 
-    banners[index].style.zIndex = "2";
-    banBtn[index].classList.add("bon")
+        banners[index].style.zIndex = "2";
+        banBtn[index].classList.add("bon")
+    }
 }
+firstBan();
 
 //一号生鲜部分轮播，进行封装，多部分调用
 var banner1= document.querySelectorAll(".bd .fre > div .con .banner1 li"),
